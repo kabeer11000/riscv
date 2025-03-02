@@ -1,2 +1,0 @@
-# riscv
-RISCV PC emulator 
