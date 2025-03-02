@@ -12,28 +12,8 @@ Features:
 
 Getting Started:
 1. Clone the repository:
-   git clone https://github.com/your-username/riscv-emulator.git
-   cd riscv-emulator
-
-2. Build the emulator:
-   mkdir build
-   cd build
-   cmake ..
-   make
-
-3. Run the emulator with a RISC-V binary:
-   ./riscv-emulator path/to/riscv_binary
-
-Compiling to WebAssembly:
-1. Install Emscripten:
-   git clone https://github.com/emscripten-core/emsdk.git
-   cd emsdk
-   ./emsdk install latest
-   ./emsdk activate latest
-   source ./emsdk_env.sh
-
-2. Compile the emulator to WebAssembly:
-   emcc -o riscv-emulator.js ../src/main.cpp -std=c++17 -s WASM=1 -s EXPORTED_FUNCTIONS='["_main"]' -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]'
+   git clone https://github.com/kabeer11000/riscv.git
+   cd riscv
 
 Repository Structure:
 - src/: Source code for the RISC-V emulator
@@ -70,9 +50,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Acknowledgments:
 - Inspired by the RISC-V architecture and open-source emulation projects.
-- Special thanks to contributors and researchers advancing hardware emulation and WebAssembly technologies.
 
 Contact:
-For questions or feedback, please open an issue in the repository or contact [your-email@example.com].
+For questions or feedback, please open an issue in the repository or contact [kabeer11000@gmail.com].
 
 This project aims to bridge the gap between hardware emulation and web-based applications, providing a platform for education, research, and experimentation. Contributions and ideas are always welcome!
